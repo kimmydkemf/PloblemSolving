@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MinHeap {
 	private ArrayList<Integer> minheap;
-	void MinHeap(){
+	MinHeap(){
 		minheap=new ArrayList<>();
 		minheap.add(1000000);
 	}
@@ -19,10 +19,10 @@ public class MinHeap {
 		}
 	}
 	int delete() {
-		if(minheap.size()<=1)
+		if(minheap.size()==1)
 			return 0;
 		int deleteItem=minheap.get(1);
-		int pos=minheap.size();
+		int pos=minheap.size()-1;
 		minheap.set(1, minheap.get(pos));
 		minheap.remove(pos);
 		pos=1;
@@ -39,5 +39,11 @@ public class MinHeap {
 			pos*=2;
 		}
 		return deleteItem;
+	}
+	public int size() {
+		return minheap.size();
+	}
+	public int get() {
+		return minheap.get(1);
 	}
 }

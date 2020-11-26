@@ -46,4 +46,10 @@ public class MaxHeap {
 			}
 			return deleteItem;
 		}
+		public int size() {
+			return heap.size();
+		}
+		public int get() {
+			return heap.get(1);
+		}
 }
