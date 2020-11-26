@@ -3,11 +3,9 @@ package 나혼자한다;
 import java.util.ArrayList;
 
 public class MaxHeap {
-
-	public static class maxHeap{
 		private ArrayList<Integer> heap;
 		
-		public maxHeap() {
+		public MaxHeap() {
 			heap=new ArrayList<Integer>();
 			heap.add(1000000);
 		}
@@ -48,5 +46,4 @@ public class MaxHeap {
 			}
 			return deleteItem;
 		}
-	}
 }

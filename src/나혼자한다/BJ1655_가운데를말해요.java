@@ -10,12 +10,8 @@ public class BJ1655_가운데를말해요 {
 		// TODO Auto-generated method stub
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int N=Integer.parseInt(br.readLine());
-		int []list=new int[N];
+		
 		for(int i=0;i<N;i++) {
-			int now=Integer.parseInt(br.readLine());
-			list[i]=now;
-			Arrays.sort(list);
-			System.out.println(list[i/2]);
 		}
 	}
 }
