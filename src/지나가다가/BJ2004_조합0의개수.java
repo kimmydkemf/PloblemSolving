@@ -20,6 +20,6 @@ public class BJ2004_조합0의개수 {
 			five-=M/i;
 		for(long i=5;i<=(N-M);i*=5)
 			five-=(N-M)/i;
-		System.out.println(Math.max(two,five));
+		System.out.println(Math.min(two,five));
 	}
 }
