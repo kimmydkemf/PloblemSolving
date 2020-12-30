@@ -24,15 +24,16 @@ public class BJ10974_모든순열 {
 		if(i<=0)
 			return false;
 		int j=arr.length-1;
-		int temp=i;
-		while(j>i) {
-			if(arr[j]<arr[temp]&&arr[i-1]<arr[j])
-				temp=j;
-			j--;
-		}
-		int cnt=arr[temp];
-		arr[temp]=arr[i-1];
-		arr[i-1]=cnt;
+//		int temp=i;
+//		while(j>i) {
+//			if(arr[j]<arr[temp]&&arr[i-1]<arr[j])
+//				temp=j;
+//			j--;
+//		}
+		while(arr[j]<=arr[i-1]) j--;
+		int temp=arr[j];
+		arr[j]=arr[i-1];
+		arr[i-1]=temp;
 		j=arr.length-1;
 		while(i<j) {
 			temp=arr[i];
