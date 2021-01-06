@@ -4,7 +4,6 @@ import java.io.*;
 
 public class BJ9663_N_Queen {
 		static int cnt;
-
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
 			int N = sc.nextInt();
@@ -14,9 +13,7 @@ public class BJ9663_N_Queen {
 			dfs(arr, visit, 1);
 			System.out.println(cnt);
 		}
-
 		static void dfs(int[] arr, boolean[] visit, int N) {
-
 			if (N == arr.length) { // 각자리에 queen을 모두 놓았을때
 				cnt++;
 				return;
@@ -35,5 +32,4 @@ public class BJ9663_N_Queen {
 				}
 			}
 		}
-
 }
