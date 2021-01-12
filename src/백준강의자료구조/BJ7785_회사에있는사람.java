@@ -33,6 +33,5 @@ public class BJ7785_회사에있는사람 {
 			// TODO Auto-generated method stub
 			return s2.compareTo(s1);
 		}
-		
 	}
 }
