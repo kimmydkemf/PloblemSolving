@@ -1,7 +1,7 @@
 package 나혼자한다;
 import java.util.*;
 
-public class 백준강의DP_BJ1052 {
+public class 백준강의DP_BJ11052_카드구매하기 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
