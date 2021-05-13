@@ -3,6 +3,7 @@ import java.util.*;
 import java.io.*;
 
 public class BJ11660_구간합구하기5 {
+	// 구간합구하기 커밋확인.
 	static long [][]dp;
 	static int [][]map;
 	static int N,M;
