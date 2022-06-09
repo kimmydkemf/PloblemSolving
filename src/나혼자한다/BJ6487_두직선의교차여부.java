@@ -1,3 +1,5 @@
+package 나혼자한다;
+
 import java.io.*;
 import java.util.*;
 
