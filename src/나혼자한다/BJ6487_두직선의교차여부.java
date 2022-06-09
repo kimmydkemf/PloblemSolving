@@ -11,7 +11,7 @@ class Point {
         this.y = y;
     }
 }
-// commit test
+// commit test re
 public class BJ6487_두직선의교차여부 {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
