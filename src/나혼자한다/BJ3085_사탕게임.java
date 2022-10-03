@@ -53,31 +53,27 @@ public class BJ3085_사탕게임 {
 	static int garo(int i) {
 		int cnt=1;
 		int result=0;
-		char prev=arr[i][0];
-		for(int n=1;n<N;n++) {
-			if(arr[i][n]==prev) {
+		for(int n=0;n<N-1;n++) {
+			if(arr[i][n]==arr[i][n+1]) {
 				cnt++;
 			}else {
 				cnt=1;
-				prev=arr[i][n];
-				result=Math.max(cnt, result);
 			}
+			result=Math.max(cnt, result);
 		}
-		return Math.max(result, cnt);
+		return result;
 	}
 	static int sero(int i) {
 		int cnt=1;
 		int result=0;
-		char prev=arr[0][i];
-		for(int n=1;n<N;n++) {
-			if(arr[n][i]==prev) {
+		for(int n=0;n<N-1;n++) {
+			if(arr[n][i]==arr[n+1][i]) {
 				cnt++;
 			}else {
 				cnt=1;
-				prev=arr[n][i];
-				result=Math.max(cnt,result);
 			}
+			result=Math.max(cnt,result);
 		}
-		return Math.max(cnt,result);
+		return result;
 	}
 }
